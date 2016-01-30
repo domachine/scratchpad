@@ -1,11 +1,20 @@
 # scratchpad
 
 This is my small starter for all react projects that I work on.  Feel free to use it as a base and
-adapt it to your.  If there's something you don't like: Shoot me an issue.
+adapt it to your needs.  If there's something you don't like: Shoot me an issue.
 
-# Setup
+# Use
 
-Just clone and spin up using:
+This is a [khaos](https://github.com/segmentio/khaos) template.  Install this first and then
+generate an app using the following command.
+
+    $ khaos create domachine/scratchpad myapp
+
+Replace `myapp` with your project name.
+
+# Start
+
+Spin the development server using:
 
     $ npm start
 
