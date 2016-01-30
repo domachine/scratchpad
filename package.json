@@ -6,7 +6,8 @@
   "scripts": {
     "start": "scripts/start",
     "build": "scripts/build",
-    "test": "scripts/test"
+    "test": "scripts/test",
+    "postinstall": "test \"$NODE_ENV\" = production && scripts/build || exit 0"
   },
   "browserify": {
     "transform": [
