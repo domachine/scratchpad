@@ -1,0 +1,17 @@
+#!/bin/bash
+
+export NODE_PATH=.
+if [[ $NODE_ENV == production ]]; then
+
+  # Run in production mode
+  node server.js
+else
+
+  # Cleanup on exit
+  trap 'kill $(jobs -p)' EXIT
+
+  # Spin up development tools
+  watchify --extension=.jsx client.js -o static/bundle.js -v &
+  catw 'styles/*.css' 'styles/**/*.css' -o static/bundle.css -v &
+  node-dev server.js
+fi

@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb",
+  "ecmaFeatures": {
+    "generators": true
+  },
+  "rules": {
+    "strict": 0,
+    "no-use-before-define": 0,
+    "no-shadow": 0,
+    "func-names": 0,
+    "space-before-function-paren": 0,
+    "eqeqeq": 0,
+    "new-cap": 0,
+    "no-param-reassign": 0,
+    "react/jsx-no-bind": 0,
+    "generator-star-spacing": [2, "before"],
+    "no-constant-condition": 0,
+  }
+}

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export NODE_PATH=.
+browserify --extension=.jsx client.js -o static/bundle.js -v
+find styles -name '*.css' | xargs cat > static/bundle.js
