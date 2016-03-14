@@ -23,11 +23,13 @@
     "babel-preset-react": "^6.5.0",
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
+    "clean-css": "^3.4.10",
     "connect-modrewrite": "^0.8.5",
     "express": "^4.13.4",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
-    "react-router": "^2.0.0-rc6"
+    "react-router": "^2.0.0",
+    "uglify-js": "^2.6.2"
   },
   "devDependencies": {
     "babel-core": "^6.5.1",
