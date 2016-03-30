@@ -3,7 +3,7 @@ import { Router, Route, browserHistory } from 'react-router';
 
 import Root from './root.jsx';
 
-export default function() {
+export default function App() {
   return (
     <Router history={browserHistory}>
       <Route path="/" component={Root} />
