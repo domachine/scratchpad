@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Router, Route, browserHistory } from 'react-router';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div className="app">
-        <h1>React scratchpad</h1>
-      </div>
-    );
-  }
+import Root from './root.jsx';
+
+export default function() {
+  return (
+    <Router history={browserHistory}>
+      <Route path="/" component={Root} />
+    </Router>
+  );
 }

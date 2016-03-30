@@ -15,6 +15,18 @@
       "babelify"
     ]
   },
+  "ava": {
+    "babel": "inherit",
+    "files": [
+      "**/*_test.js"
+    ],
+    "source": [
+      "**/*.js",
+      "**/*.jsx",
+      "!node_modules/**/*",
+      "!static/**/*"
+    ]
+  },
   "keywords": [],
   "author": "{{author}}",
   "license": "ISC",
@@ -32,13 +44,14 @@
     "uglify-js": "^2.6.2"
   },
   "devDependencies": {
-    "babel-core": "^6.5.1",
+    "ava": "^0.13.0",
+    "babel-register": "^6.7.2",
     "catw": "^1.0.1",
     "eslint": "^2.3.0",
     "eslint-config-airbnb": "^6.1.0",
     "eslint-plugin-react": "^4.2.0",
     "node-dev": "^3.0.0",
-    "tap": "^5.4.3",
+    "react-addons-test-utils": "^0.14.8",
     "watchify": "^3.7.0"
   },
   "engines": {

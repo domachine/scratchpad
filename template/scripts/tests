@@ -2,8 +2,4 @@
 
 export NODE_PATH=lib
 
-find . -path "**/*_test.js" ! -path './node_modules/*' \
-  | xargs tap "$@"
-
-find . -path "**/*_test.babel.js" ! -path './node_modules/*' \
-  | xargs tap --node-arg=-r --node-arg=babel-core/register "$@"
+ava "$@"
