@@ -21,8 +21,10 @@ Spin the development server using:
 # Tests
 
 I like to wave tests side by side with my code.  Everything which is named with `_test.js` in the
-end, is run using [tap](https://github.com/tapjs/node-tap) with the following command:
+end, is run using [ava](https://github.com/sindresorhus/ava) with the following command:
 
     $ npm test
+
+As a bonus, the `start` command spins up `ava` in watch mode.
 
 Happy hacking!
