@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export NODE_PATH=.
+export NODE_PATH=lib
 if [[ $NODE_ENV == production ]]; then
 
   # Run in production mode

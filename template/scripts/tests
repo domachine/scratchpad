@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export NODE_PATH=.
+export NODE_PATH=lib
 
 find . -path "**/*_test.js" ! -path './node_modules/*' \
   | xargs tap "$@"
