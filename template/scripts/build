@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export NODE_PATH=.
+export NODE_PATH=lib
 browserify --extension=.jsx client.js -o static/bundle.js -v
 find styles -name '*.css' | xargs cat > static/bundle.css
 uglifyjs -m -c -o static/bundle.min.js -- static/bundle.js
