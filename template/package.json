@@ -7,7 +7,7 @@
     "start": "scripts/start",
     "build": "scripts/build",
     "tests": "sh -c 'scripts/tests || exit 0'",
-    "test": "scripts/test",
+    "test": "standard && scripts/test",
     "postinstall": "test \"$NODE_ENV\" = production && scripts/build || exit 0"
   },
   "browserify": {
@@ -47,15 +47,13 @@
     "ava": "^0.14.0",
     "babel-register": "^6.7.2",
     "catw": "^1.0.1",
-    "eslint": "^2.3.0",
-    "eslint-config-airbnb": "^6.1.0",
-    "eslint-plugin-react": "^4.2.0",
     "node-dev": "^3.0.0",
     "react-addons-test-utils": "^15.0.1",
+    "standard": "^7.0.1",
     "watchify": "^3.7.0"
   },
   "engines": {
-    "node": "5.9.1",
-    "npm": "3.7.3"
+    "node": "6.1.0",
+    "npm": "3.8.6"
   }
 }

@@ -1,3 +1,3 @@
-import Root from '../components/root.jsx';
+import Root from '../components/root.jsx'
 
-export default Root;
+export default Root

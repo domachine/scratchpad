@@ -1,3 +1,3 @@
-import test from 'ava';
+import test from 'ava'
 
-test.todo('renders correctly');
+test.todo('renders correctly')

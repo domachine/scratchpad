@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-export default function Root() {
+export default function Root () {
   return (
-    <div className="root">
+    <div className='root'>
       React scratchpad
     </div>
-  );
+  )
 }
